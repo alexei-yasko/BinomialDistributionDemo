@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root type="agd.yaskoam.binomial.ui.ProbabilityFunctionChartPanel" xmlns:fx="http://javafx.com/fxml/1">
+
+    <BarChart VBox.vgrow="ALWAYS">
+        <xAxis>
+            <CategoryAxis side="BOTTOM"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT"/>
+        </yAxis>
+    </BarChart>
+
+</fx:root>

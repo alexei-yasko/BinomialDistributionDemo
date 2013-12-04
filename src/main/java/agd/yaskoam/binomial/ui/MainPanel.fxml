@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import agd.yaskoam.binomial.ui.ProbabilityFunctionChartPanel?>
+<?import agd.yaskoam.binomial.ui.DistributionFunctionChartPanel?>
+
+<?import agd.yaskoam.binomial.ui.SettingsPanel?>
+<fx:root type="agd.yaskoam.binomial.ui.MainPanel" xmlns:fx="http://javafx.com/fxml/1" prefHeight="700.0" prefWidth="950.0">
+
+    <SplitPane dividerPositions="0.8" focusTraversable="true" orientation="VERTICAL"  VBox.vgrow="ALWAYS">
+
+        <TabPane rotateGraphic="true" tabClosingPolicy="UNAVAILABLE">
+            <Tab text="Функция вероятности" >
+                <ProbabilityFunctionChartPanel/>
+            </Tab>
+            <Tab text="Функция распределения" closable="false">
+                <DistributionFunctionChartPanel/>
+            </Tab>
+        </TabPane>
+
+        <SettingsPanel/>
+
+    </SplitPane>
+
+</fx:root>
