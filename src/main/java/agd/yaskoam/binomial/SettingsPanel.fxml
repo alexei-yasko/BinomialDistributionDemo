@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.layout.HBox?>
-<fx:root type="agd.yaskoam.binomial.ui.SettingsPanel" xmlns:fx="http://javafx.com/fxml/1">
+
+<fx:root type="agd.yaskoam.binomial.SettingsPanel" xmlns:fx="http://javafx.com/fxml/1">
 
     <GridPane VBox.vgrow="ALWAYS">
 
@@ -21,12 +21,12 @@
                     <Insets right="20.0" fx:id="x1"/>
                 </FlowPane.margin>
             </Label>
-            <TextField fx:id="maxNTextField" text="0"/>
+            <TextField fx:id="maxNTextField" text="10"/>
         </FlowPane>
 
         <FlowPane alignment="CENTER_LEFT" GridPane.columnIndex="0" GridPane.rowIndex="1">
             <Label text="max p:" FlowPane.margin="$x1"/>
-            <TextField fx:id="maxPTextField" text="0"/>
+            <TextField fx:id="maxPTextField" text="1"/>
         </FlowPane>
 
         <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="0">
@@ -35,7 +35,7 @@
                     <Insets right="5.0" fx:id="x2"/>
                 </HBox.margin>
             </Label>
-            <Slider fx:id="nSlider" minWidth="300" max="10" HBox.hgrow="ALWAYS"/>
+            <Slider fx:id="nSlider" minWidth="300" max="10" value="10" HBox.hgrow="ALWAYS"/>
             <Label fx:id="nSliderMaxValueLabel" minWidth="70" maxWidth="70">
                 <HBox.margin>
                     <Insets left="5.0" fx:id="x3"/>
@@ -45,7 +45,7 @@
 
         <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
             <Label text="0" FlowPane.margin="$x2"/>
-            <Slider fx:id="pSlider" minWidth="300" max="1" HBox.hgrow="ALWAYS"/>
+            <Slider fx:id="pSlider" minWidth="300" max="1" value="0.5" HBox.hgrow="ALWAYS"/>
             <Label fx:id="pSliderMaxValueLabel" minWidth="70" maxWidth="70" FlowPane.margin="$x3"/>
         </HBox>
 

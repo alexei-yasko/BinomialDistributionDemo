@@ -1,4 +1,4 @@
-package agd.yaskoam.binomial.ui;
+package agd.yaskoam.binomial;
 
 import javafx.scene.control.TextField;
 

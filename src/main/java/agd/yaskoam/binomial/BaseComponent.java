@@ -1,4 +1,4 @@
-package agd.yaskoam.binomial.ui;
+package agd.yaskoam.binomial;
 
 import java.io.IOException;
 import java.net.URL;

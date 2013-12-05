@@ -1,10 +1,11 @@
-package agd.yaskoam.binomial.ui;
+package agd.yaskoam.binomial;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import agd.yaskoam.binomial.ui.support.DoubleTextFieldConstraint;
-import agd.yaskoam.binomial.ui.support.IntTextFieldConstraint;
+import agd.yaskoam.binomial.support.DoubleTextFieldConstraint;
+import agd.yaskoam.binomial.support.IntTextFieldConstraint;
+import javafx.beans.property.DoubleProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
@@ -43,8 +44,17 @@ public class SettingsPanel extends BaseComponent {
         setTextFieldsEventHandlers();
     }
 
+    public DoubleProperty pProperty() {
+        return pSlider.valueProperty();
+    }
+
+    public DoubleProperty nProperty() {
+        return nSlider.valueProperty();
+    }
+
     private void setTextFieldsEventHandlers() {
         maxNTextField.textProperty().addListener(new IntTextFieldConstraint(maxNTextField));
+        maxNTextField.textProperty().addListener(new MaxDoubleTextFieldConstraint(50, maxNTextField));
         maxNTextField.textProperty().addListener(new MaxNFieldOnChangeListener());
 
         maxPTextField.textProperty().addListener(new DoubleTextFieldConstraint(maxPTextField));

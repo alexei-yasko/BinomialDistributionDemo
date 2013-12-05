@@ -7,24 +7,25 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
-<?import agd.yaskoam.binomial.ui.ProbabilityFunctionChartPanel?>
-<?import agd.yaskoam.binomial.ui.DistributionFunctionChartPanel?>
+<?import agd.yaskoam.binomial.ProbabilityFunctionChartPanel?>
+<?import agd.yaskoam.binomial.DistributionFunctionChartPanel?>
+<?import agd.yaskoam.binomial.SettingsPanel?>
 
-<?import agd.yaskoam.binomial.ui.SettingsPanel?>
-<fx:root type="agd.yaskoam.binomial.ui.MainPanel" xmlns:fx="http://javafx.com/fxml/1" prefHeight="700.0" prefWidth="950.0">
+<fx:root type="agd.yaskoam.binomial.MainPanel" xmlns:fx="http://javafx.com/fxml/1" prefHeight="700.0" prefWidth="950.0"
+         stylesheets="/agd/yaskoam/binomial/style.css">
 
     <SplitPane dividerPositions="0.8" focusTraversable="true" orientation="VERTICAL"  VBox.vgrow="ALWAYS">
 
         <TabPane rotateGraphic="true" tabClosingPolicy="UNAVAILABLE">
             <Tab text="Функция вероятности" >
-                <ProbabilityFunctionChartPanel/>
+                <ProbabilityFunctionChartPanel fx:id="probabilityChartPanel"/>
             </Tab>
             <Tab text="Функция распределения" closable="false">
-                <DistributionFunctionChartPanel/>
+                <DistributionFunctionChartPanel fx:id="distributionChartPanel"/>
             </Tab>
         </TabPane>
 
-        <SettingsPanel/>
+        <SettingsPanel fx:id="settingsPanel"/>
 
     </SplitPane>
 

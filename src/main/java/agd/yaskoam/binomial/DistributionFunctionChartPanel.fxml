@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.chart.ScatterChart?>
 
-<fx:root type="agd.yaskoam.binomial.ui.DistributionFunctionChartPanel" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root type="agd.yaskoam.binomial.DistributionFunctionChartPanel" xmlns:fx="http://javafx.com/fxml/1">
 
-    <ScatterChart id="ScatterChart" VBox.vgrow="ALWAYS">
+    <ScatterChart fx:id="distributionChart" legendVisible="false" id="ScatterChart" VBox.vgrow="ALWAYS" animated="false">
         <xAxis>
             <CategoryAxis side="BOTTOM"/>
         </xAxis>

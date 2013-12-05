@@ -1,6 +1,5 @@
 package agd.yaskoam.binomial;
 
-import agd.yaskoam.binomial.ui.MainPanel;
 import javafx.application.Application;
 import javafx.scene.Parent;
 import javafx.scene.Scene;

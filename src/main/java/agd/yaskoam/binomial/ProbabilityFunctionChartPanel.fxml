@@ -5,9 +5,10 @@
 <?import javafx.scene.chart.CategoryAxis?>
 <?import javafx.scene.layout.VBox?>
 
-<fx:root type="agd.yaskoam.binomial.ui.ProbabilityFunctionChartPanel" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root type="agd.yaskoam.binomial.ProbabilityFunctionChartPanel" xmlns:fx="http://javafx.com/fxml/1"
+        stylesheets="/agd/yaskoam/binomial/style.css">
 
-    <BarChart VBox.vgrow="ALWAYS">
+    <BarChart legendVisible="false" fx:id="probabilityChart" VBox.vgrow="ALWAYS" animated="false">
         <xAxis>
             <CategoryAxis side="BOTTOM"/>
         </xAxis>
