@@ -11,6 +11,9 @@ import javafx.fxml.FXML;
 public class MainPanel extends BaseComponent {
 
     @FXML
+    private StatusPanel statusPanel;
+
+    @FXML
     private SettingsPanel settingsPanel;
 
     @FXML
@@ -27,5 +30,8 @@ public class MainPanel extends BaseComponent {
 
         distributionChartPanel.nProperty().bind(settingsPanel.nProperty());
         distributionChartPanel.pProperty().bind(settingsPanel.pProperty());
+
+        statusPanel.nProperty().bind(settingsPanel.nProperty());
+        statusPanel.pProperty().bind(settingsPanel.pProperty());
     }
 }

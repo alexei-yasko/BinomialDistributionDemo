@@ -5,3 +5,12 @@
 .chart-symbol{
     -fx-background-color: #468aea;
 }
+
+.label,
+.tab-pane .headers-region {
+    -fx-font-size: 17pt;
+}
+
+.statusPanel .valueLabel {
+    -fx-text-fill: #ff654f;
+}

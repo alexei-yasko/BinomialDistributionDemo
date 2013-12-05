@@ -10,11 +10,12 @@
 <?import agd.yaskoam.binomial.ProbabilityFunctionChartPanel?>
 <?import agd.yaskoam.binomial.DistributionFunctionChartPanel?>
 <?import agd.yaskoam.binomial.SettingsPanel?>
+<?import agd.yaskoam.binomial.StatusPanel?>
 
-<fx:root type="agd.yaskoam.binomial.MainPanel" xmlns:fx="http://javafx.com/fxml/1" prefHeight="700.0" prefWidth="950.0"
+<fx:root type="agd.yaskoam.binomial.MainPanel" xmlns:fx="http://javafx.com/fxml/1" prefHeight="800.0" prefWidth="1000.0"
          stylesheets="/agd/yaskoam/binomial/style.css">
 
-    <SplitPane dividerPositions="0.8" focusTraversable="true" orientation="VERTICAL"  VBox.vgrow="ALWAYS">
+    <SplitPane dividerPositions="0.85" focusTraversable="true" orientation="VERTICAL"  VBox.vgrow="ALWAYS">
 
         <TabPane rotateGraphic="true" tabClosingPolicy="UNAVAILABLE">
             <Tab text="Функция вероятности" >
@@ -28,5 +29,7 @@
         <SettingsPanel fx:id="settingsPanel"/>
 
     </SplitPane>
+
+    <StatusPanel fx:id="statusPanel"/>
 
 </fx:root>

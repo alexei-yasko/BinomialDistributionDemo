@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import agd.yaskoam.binomial.ProbabilityFunctionChartPanel?>
+<?import agd.yaskoam.binomial.DistributionFunctionChartPanel?>
+<?import agd.yaskoam.binomial.SettingsPanel?>
+
+<fx:root type="agd.yaskoam.binomial.StatusPanel" styleClass="statusPanel" xmlns:fx="http://javafx.com/fxml/1">
+
+    <HBox>
+        <Label text="n value:">
+            <HBox.margin>
+                <Insets right="10.0"/>
+            </HBox.margin>
+        </Label>
+
+
+        <Label fx:id="nLabel" styleClass="valueLabel">
+            <HBox.margin>
+                <Insets right="10.0"/>
+            </HBox.margin>
+        </Label>
+
+        <Label text="p value:">
+            <HBox.margin>
+                <Insets right="10.0"/>
+            </HBox.margin>
+        </Label>
+
+
+        <Label fx:id="pLabel" styleClass="valueLabel">
+            <HBox.margin>
+                <Insets right="10.0"/>
+            </HBox.margin>
+        </Label>
+
+        <VBox.margin>
+            <Insets top="10.0"/>
+            <Insets right="10.0"/>
+            <Insets bottom="10.0"/>
+            <Insets left="10.0"/>
+        </VBox.margin>
+
+    </HBox>
+
+</fx:root>

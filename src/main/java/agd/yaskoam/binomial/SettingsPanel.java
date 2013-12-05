@@ -41,6 +41,8 @@ public class SettingsPanel extends BaseComponent {
         nSliderMaxValueLabel.textProperty().bind(nSlider.maxProperty().asString());
         pSliderMaxValueLabel.textProperty().bind(pSlider.maxProperty().asString());
 
+        nSlider.setBlockIncrement(1);
+
         setTextFieldsEventHandlers();
     }
 
